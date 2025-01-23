@@ -1,0 +1,38 @@
+.btn {
+  padding: 5px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s opacity;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  border: 2px solid var(--primary);
+
+  &:disabled {
+    background-color: #ccc;
+    border-color: #ccc;
+    color: white; 
+  }
+}
+
+.btn-reverse-primary {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background-color: white;
+
+  &:disabled {
+    border-color: #ccc; 
+    color: #ccc;
+  }
+}
